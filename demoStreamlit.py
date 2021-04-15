@@ -99,6 +99,10 @@ def main():
 	data = loadData()
 	X_train, X_test, y_train, y_test, le = preprocessing(data)
 
+	st.write("")
+	st.write("")
+	st.write("")
+	st.write("")
 	# Insert Check-Box to show the snippet of the data.
 	if st.checkbox('Show Raw Data'):
 		st.subheader("Showing raw data---->>>")	
@@ -163,6 +167,8 @@ def main():
 	# Visualization Section
 	plotData = showMap()
 	st.subheader("Bike Travel History data plotted-first few locations located near Washington DC")
+	st.write("")
+	st.write("")
 	st.map(plotData, zoom = 14)
 
 
